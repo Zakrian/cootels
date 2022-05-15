@@ -187,10 +187,6 @@ main {
 	width: 100%;
 	padding: 55px 0;
 	background-color: rgba(255, 255, 255, 0.85);
-	/* .header__container */
-	/* .header__logo */
-	/* .header__menu */
-	/* .header__btn */
 }
 
 .header__container {
@@ -211,13 +207,6 @@ main {
 
 .header__btn:hover {
 	font-weight: 600;
-}
-
-.menu {
-	/* .menu__icon */
-	/* .menu__body */
-	/* .menu__list */
-	/* .menu__link */
 }
 
 .menu__list {
@@ -454,7 +443,7 @@ main {
 	width: 188px;
 	height: 588px;
 	overflow: hidden;
-	background-image: url("../../img/intro/01.jpg");
+	background-image: url("../img/intro/01.jpg");
 	background-size: 335% 150%;
 	background-repeat: no-repeat;
 	border-radius: 4px;
@@ -464,9 +453,6 @@ main {
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-	/* .intro__img_1 */
-	/* .intro__img_2 */
-	/* .intro__img_3 */
 }
 
 .intro__img_1 {
@@ -647,7 +633,6 @@ main {
 .item-about {
 	width: 33%;
 	border-radius: 4px;
-	/* .item-about__img */
 }
 
 .item-about__img {
@@ -845,8 +830,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	/* .col-reservation__text */
-	/* .col-reservation__link */
 }
 
 .col-reservation__text {
@@ -1173,10 +1156,6 @@ main {
 .swiper {
 	width: 100%;
 	padding-bottom: 55px;
-	/* .swiper__title */
-	/* .swiper__img */
-	/* .swiper__text */
-	/* .swiper__name */
 }
 
 .swiper-slide {
@@ -1216,15 +1195,6 @@ main {
 
 .footer {
 	background-color: #0b265a;
-	/* .footer__content */
-	/* .footer__item */
-	/* .footer__title */
-	/* .footer__text */
-	/* .footer__social */
-	/* .footer__col */
-	/* .footer__item-title */
-	/* .footer__list */
-	/* .footer__link */
 }
 
 .footer__content {
