@@ -1,0 +1,171 @@
+.footer {
+	background-color: $saphire-color;
+	/* .footer__content */
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	/* .footer__item */
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		&_list {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+	/* .footer__title */
+	&__title {
+		font-weight: 700;
+		margin-bottom: 13px;
+		color: $white-color;
+	}
+	/* .footer__text */
+	&__text {
+		max-width: 190px;
+		font-size: 16px;
+		line-height: 1.75;
+		margin-bottom: 36px;
+		color: $light-blue-color;
+	}
+	/* .footer__social */
+	&__social {
+		a {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			cursor: pointer;
+			transition: 0.2s ease-in-out;
+			color: $white-color;
+			&:not(:last-child) {
+				margin-right: 24px;
+			}
+			&:hover {
+				color: $accent-color;
+			}
+			&::before {
+				font-size: 32px;
+			}
+		}
+	}
+	/* .footer__col */
+	&__col {
+		&:not(:last-child) {
+			margin-right: 120px;
+		}
+	}
+	/* .footer__item-title */
+	&__item-title {
+		margin-bottom: 24px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.2;
+		color: $white-color;
+	}
+	/* .footer__list */
+	&__list {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+	/* .footer__link */
+	&__link {
+		font-size: 16px;
+		line-height: 1.2;
+		color: $light-blue-color;
+		transition: 0.2s ease-in-out;
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+.item-footer__col {
+	width: 33.333%;
+}
+
+@media (max-width: 991.98px) {
+	.footer {
+		&__item {
+			// flex: 1 1 auto;
+			width: 100%;
+			&_list {
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: space-between;
+			}
+		}
+		&__col:not(:last-child) {
+			margin-right: 0;
+		}
+	}
+	.item-footer__col {
+		width: 40%;
+		flex: 0 1 auto;
+		&:not(:last-child) {
+			margin-right: 0;
+		}
+		&:nth-child(-n + 2) {
+			margin-bottom: 60px;
+		}
+	}
+	.first-item {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 649.98px) {
+	.footer {
+		&__item {
+			&_list {
+				flex-direction: column;
+				align-items: center;
+			}
+			&-title {
+				margin-bottom: 15px;
+				font-size: 25px;
+			}
+		}
+		&__col {
+			flex: 1 1 auto;
+			text-align: center;
+		}
+		&__title {
+			font-size: 34px;
+		}
+		&__text {
+			max-width: 300px;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			font-size: 20px;
+		}
+		&__social {
+			a {
+				width: 45px;
+				height: 45px;
+				&::before {
+					font-size: 45px;
+				}
+				&:not(:last-child) {
+					margin-right: 55px;
+				}
+			}
+		}
+		&__link {
+			font-size: 22px;
+		}
+	}
+	.item-footer__col {
+		width: 100%;
+	}
+	.item-footer__col:nth-child(-n + 2) {
+		margin-bottom: 0;
+	}
+	.item-footer__col:not(:last-child) {
+		margin-bottom: 40px;
+	}
+}

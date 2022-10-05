@@ -1,0 +1,40 @@
+.testimonials {
+}
+.swiper {
+	width: 100%;
+	padding-bottom: 55px;
+	&-slide {
+		text-align: center;
+	}
+	&-pagination {
+		&-bullet {
+			transition: transform 0.3s ease-in-out;
+			background-color: $yellow-opacity-color;
+			&-active {
+				background-color: $yellow-color;
+				transform: scale(150%);
+			}
+		}
+	}
+	/* .swiper__title */
+	&__title {
+		font-weight: 600;
+		font-size: 36px;
+		margin-bottom: 62px;
+	}
+	/* .swiper__img */
+	&__img {
+		margin-bottom: 44px;
+	}
+	/* .swiper__text */
+	&__text {
+		max-width: 800px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	/* .swiper__name */
+	&__name {
+		font-weight: 50;
+		font-size: 20px;
+	}
+}
